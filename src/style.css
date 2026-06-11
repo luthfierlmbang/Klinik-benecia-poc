@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #8b4728;
+  --color-brand-primary-hover: #733a1e;
+  --color-brand-secondary: #91d975;
+  --color-brand-forest: #435B37;
+  --color-brand-light: #fbf6f3;
+  --color-neutral-dark: #2a1b12;
+  --color-neutral-secondary: #70655d;
+  --color-neutral-footer: #22120a;
+  
+  --font-sans: "Poppins", sans-serif;
+  --font-serif: "Poppins", sans-serif;
+  
+  --animate-fade-in-up: fade-in-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-slide-down: slide-down 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-slide-up: slide-up 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes slide-up {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
+}
+
+/* Custom global styles & typography */
+@layer base {
+  *, ::before, ::after {
+    font-family: 'Poppins', sans-serif !important;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif !important;
+    color: var(--color-neutral-dark);
+    background-color: white;
+  }
+  
+  body, button, input, select, textarea, span, p, a, div, li, ul, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif !important;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* Scroll Animation classes */
+.reveal-element {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-element.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Micro-interaction classes */
+.btn-interactive {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-interactive:hover {
+  transform: scale(1.03);
+}
+
+.btn-interactive:active {
+  transform: scale(0.97);
+}
+
+.card-interactive {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-interactive:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(139, 71, 40, 0.08);
+  border-color: var(--color-brand-light);
+}
+
+/* Smooth Accordion FAQ */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+  opacity: 0;
+}
+
+.faq-item.faq-open .faq-content {
+  max-height: 200px;
+  opacity: 1;
+}
+
+.faq-item .faq-icon {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.faq-item.faq-open .faq-icon {
+  transform: rotate(180deg);
+}
+
+/* Premium Buttons & Hierarchy */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  background-color: var(--color-brand-primary);
+  color: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-primary:hover {
+  background-color: var(--color-brand-primary-hover);
+  transform: scale(1.03);
+}
+.btn-primary:active {
+  transform: scale(0.97);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--color-brand-primary);
+  color: var(--color-brand-primary);
+  background-color: transparent;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-outline:hover {
+  background-color: var(--color-brand-light);
+  border-color: var(--color-brand-primary);
+  color: var(--color-brand-primary);
+  transform: scale(1.03);
+}
+.btn-outline:active {
+  transform: scale(0.97);
+}
+
+.btn-sm {
+  padding: 0.5rem 1.125rem;
+  font-size: 0.875rem;
+}
+
+/* Custom transparent & scrolled navbar styles */
+#navbar {
+  background-color: transparent;
+  border-color: transparent;
+  backdrop-filter: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#navbar .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  transition: color 0.2s ease;
+}
+
+#navbar .nav-link:hover {
+  color: white;
+}
+
+#navbar .nav-logo {
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s ease;
+}
+
+#navbar #mobile-menu-btn {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+#navbar #mobile-menu-btn:hover {
+  color: var(--color-brand-secondary);
+}
+
+/* Navbar outline button when transparent */
+#navbar .btn-outline {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: white;
+}
+
+#navbar .btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: white;
+  color: white;
+}
+
+/* Scrolled state applied past hero */
+#navbar.navbar-scrolled {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom-color: rgba(243, 244, 246, 1); /* border-gray-100 */
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05); /* shadow-sm */
+  padding-top: 0.75rem; /* py-3 */
+  padding-bottom: 0.75rem;
+}
+
+#navbar.navbar-scrolled .nav-link {
+  color: var(--color-neutral-secondary);
+}
+
+#navbar.navbar-scrolled .nav-link:hover {
+  color: var(--color-brand-primary);
+}
+
+#navbar.navbar-scrolled .nav-logo {
+  filter: none;
+}
+
+#navbar.navbar-scrolled #mobile-menu-btn {
+  color: var(--color-neutral-secondary);
+}
+
+#navbar.navbar-scrolled #mobile-menu-btn:hover {
+  color: var(--color-brand-primary);
+}
+
+#navbar.navbar-scrolled .btn-outline {
+  border-color: var(--color-brand-primary);
+  color: var(--color-brand-primary);
+}
+
+#navbar.navbar-scrolled .btn-outline:hover {
+  background-color: var(--color-brand-light);
+  border-color: var(--color-brand-primary);
+  color: var(--color-brand-primary);
+}
+
+/* Animated bouncing arrow inside pill button on hover */
+@keyframes arrow-bounce-horizontal {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+}
+
+.group:hover .arrow-icon-bounce {
+  animation: arrow-bounce-horizontal 0.8s infinite ease-in-out;
+}
+
+
+

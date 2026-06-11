@@ -1,0 +1,872 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/avif" href="/images/logo_benecia.avif" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Klinik Utama Benecia | Fisioterapi & Tumbuh Kembang Anak Semarang</title>
+    <meta name="description" content="Klinik Utama Benecia adalah pusat layanan fisioterapi dewasa dan tumbuh kembang anak terbaik di Semarang. Konsultasi dokter spesialis dr. Nandra Hermanto, Sp.KFR." />
+    <meta name="keywords" content="fisioterapi semarang, tumbuh kembang anak semarang, klinik benecia, terapi wicara semarang, terapi okupasi semarang, psikolog anak semarang" />
+    <!-- Google Fonts Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body class="font-sans text-neutral-dark bg-white">
+    
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-6 border-b border-transparent">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between">
+        
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+          <img src="/images/logo_benecia.avif" alt="Logo Klinik Utama Benecia" class="nav-logo h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden md:flex items-center gap-8 font-medium text-sm">
+          <a href="#layanan" class="nav-link transition-colors py-2">Layanan</a>
+          <a href="#keunggulan" class="nav-link transition-colors py-2">Keunggulan</a>
+          <a href="#alur" class="nav-link transition-colors py-2">Alur Terapi</a>
+          <a href="#ulasan" class="nav-link transition-colors py-2">Ulasan</a>
+          <a href="#faq" class="nav-link transition-colors py-2">FAQ</a>
+        </div>
+
+        <!-- Desktop CTA -->
+        <div class="hidden md:flex items-center gap-4">
+          <a href="https://drive.google.com/file/d/1rNcutm8e9Ff9faOezKV68QfnHTF7a-rM/view?usp=sharing" target="_blank" class="btn-outline btn-sm">Katalog</a>
+          <a href="https://wa.me/6285943750988?text=Halo%20Klinik%20Utama%20Benecia,%20saya%20memiliki%20pertanyaan.%20Berikut%20data%20saya:%0ANama%20:%20%0AUsia%20:%20%0ANo.HP%20:%20%0APertanyaan%20:%20" target="_blank" class="btn-primary btn-sm">
+            Reservasi Sekarang
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 focus:outline-none transition-colors duration-200" aria-label="Buka Menu">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-lg py-4 px-6 flex flex-col gap-4">
+        <a href="#layanan" class="mobile-link text-neutral-secondary font-medium py-2 border-b border-gray-50">Layanan</a>
+        <a href="#keunggulan" class="mobile-link text-neutral-secondary font-medium py-2 border-b border-gray-50">Keunggulan</a>
+        <a href="#alur" class="mobile-link text-neutral-secondary font-medium py-2 border-b border-gray-50">Alur Terapi</a>
+        <a href="#ulasan" class="mobile-link text-neutral-secondary font-medium py-2 border-b border-gray-50">Ulasan</a>
+        <a href="#faq" class="mobile-link text-neutral-secondary font-medium py-2 border-b border-gray-50">FAQ</a>
+        <div class="flex flex-col gap-3 pt-2">
+          <a href="https://drive.google.com/file/d/1rNcutm8e9Ff9faOezKV68QfnHTF7a-rM/view?usp=sharing" target="_blank" class="btn-outline w-full py-2.5">Katalog Layanan</a>
+          <a href="https://wa.me/6285943750988?text=Halo%20Klinik%20Utama%20Benecia,%20saya%20memiliki%20pertanyaan." target="_blank" class="btn-primary w-full py-3">Reservasi via WhatsApp</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section (Full Viewport Layout with Background Image & Pill Button) -->
+    <section class="relative min-h-screen flex items-end pt-32 pb-20 px-6 lg:px-[120px] overflow-hidden text-white">
+      <!-- Background Image Carousel with Overlay -->
+      <div id="hero-carousel" class="absolute inset-0 z-0">
+        <div class="carousel-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-100" style="background-image: url('/images/hero_carousel_1.png');"></div>
+        <div class="carousel-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('/images/hero_carousel_2.png');"></div>
+        <div class="carousel-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('/images/hero_carousel_3.png');"></div>
+      </div>
+      <div class="absolute inset-0 bg-[#22120a]/50 z-0"></div> <!-- dark brand-colored overlay for legibility -->
+
+      <!-- Carousel Navigation Arrows -->
+      <button id="carousel-prev" class="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 flex items-center justify-center text-white backdrop-blur-sm transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer focus:outline-none" aria-label="Previous Slide">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
+      </button>
+      <button id="carousel-next" class="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 flex items-center justify-center text-white backdrop-blur-sm transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer focus:outline-none" aria-label="Next Slide">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+      </button>
+
+      <!-- Carousel Indicators -->
+      <div id="carousel-indicators" class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2.5">
+        <button class="carousel-dot w-8 h-2 rounded-full bg-white transition-all duration-300 cursor-pointer focus:outline-none" data-slide="0" aria-label="Slide 1"></button>
+        <button class="carousel-dot w-2 h-2 rounded-full bg-white/40 hover:bg-white/60 transition-all duration-300 cursor-pointer focus:outline-none" data-slide="1" aria-label="Slide 2"></button>
+        <button class="carousel-dot w-2 h-2 rounded-full bg-white/40 hover:bg-white/60 transition-all duration-300 cursor-pointer focus:outline-none" data-slide="2" aria-label="Slide 3"></button>
+      </div>
+      
+      <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-end relative z-10 reveal-element">
+        
+        <!-- Left: Text content (8 columns) -->
+        <div class="lg:col-span-8 flex flex-col gap-6 text-left">
+          <h1 class="text-4xl md:text-5xl lg:text-[3.5rem] font-bold tracking-tight text-white leading-[1.1] font-sans">
+            Layanan Terapi Terpadu untuk Tumbuh Kembang & Pemulihan Keluarga
+          </h1>
+          
+          <p class="text-base md:text-lg text-brand-light/90 leading-relaxed max-w-2xl">
+            Dukung tumbuh kembang buah hati Anda dan pulihkan kesehatan fisik keluarga bersama tim dokter spesialis rehabilitasi medik dan terapis berpengalaman di Semarang.
+          </p>
+        </div>
+
+        <!-- Right: Pill CTA Button (4 columns, aligned to bottom right) -->
+        <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-4 justify-start lg:items-end">
+          <a href="https://wa.me/6285943750988?text=Halo%20Klinik%20Utama%20Benecia,%20saya%20memiliki%20pertanyaan." target="_blank" 
+             class="inline-flex items-center gap-4 bg-brand-primary hover:bg-brand-primary-hover text-white p-2 pr-6 rounded-full hover:scale-105 transition-transform duration-300 shadow-xl group w-fit">
+            <span class="h-12 w-12 rounded-full bg-white flex items-center justify-center transition-transform duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="arrow-icon-bounce w-5 h-5 text-brand-primary transition-transform duration-300">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </span>
+            <span class="font-bold text-sm tracking-wide text-white">Reservasi Sekarang</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Layanan Section -->
+    <section id="layanan" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-6 lg:px-[120px]">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto flex flex-col gap-4 mb-16 reveal-element">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-neutral-dark">Layanan Klinik Utama Benecia</h2>
+          <p class="text-neutral-secondary text-base md:text-lg">
+            Program rehabilitasi terpadu bersama dokter spesialis & terapis berpengalaman.
+          </p>
+        </div>
+
+        <!-- Alternating Bento Cards Grid (Flat layout without shadows, optimized for no overlaps) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal-element">
+          
+          <!-- Column 1: Fisioterapi (Image Top, Text Bottom - Solid Teal) -->
+          <div class="flex flex-col gap-6">
+            <!-- Image Card -->
+            <div class="h-[350px] w-full rounded-[32px] overflow-hidden group">
+              <img src="/images/fisioterapi/fisioterapi_bento.png" alt="Layanan Fisioterapi Dewasa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            </div>
+            <!-- Text Card (Solid Teal) -->
+            <a href="fisioterapi.html" class="min-h-[220px] h-fit w-full bg-brand-primary text-white rounded-[32px] px-8 py-7 flex flex-col justify-between text-left hover:opacity-95 transition-all group">
+              <div>
+                <h3 class="text-xl font-bold">01. Fisioterapi</h3>
+                <p class="text-sm text-white/90 mt-2.5 leading-relaxed">
+                  Rehabilitasi pasca-stroke, cedera olahraga, dan saraf terjepit.
+                </p>
+              </div>
+              <div class="inline-flex items-center gap-2 text-xs font-semibold text-white mt-4">
+                <span>Detail Layanan</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 8 16 12 12 16"></polyline>
+                  <line x1="8" y1="12" x2="16" y2="12"></line>
+                </svg>
+              </div>
+            </a>
+          </div>
+
+          <!-- Column 2: Terapi Wicara (Text Top - Cream, Image Bottom) -->
+          <div class="flex flex-col gap-6">
+            <!-- Text Card (Cream) -->
+            <a href="https://wa.me/6285943750988?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Terapi%20Wicara." target="_blank" class="min-h-[220px] h-fit w-full bg-[#FAF7F2] text-neutral-dark rounded-[32px] px-8 py-7 flex flex-col justify-between text-left hover:bg-[#FAF4EB] transition-all group">
+              <div>
+                <h3 class="text-xl font-bold text-neutral-dark">02. Terapi Wicara</h3>
+                <p class="text-sm text-neutral-secondary mt-2.5 leading-relaxed">
+                  Terapi speech delay (lambat bicara), gangguan bahasa, dan artikulasi anak.
+                </p>
+              </div>
+              <div class="inline-flex items-center gap-2 text-xs font-semibold text-brand-primary mt-4">
+                <span>Detail Layanan</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 8 16 12 12 16"></polyline>
+                  <line x1="8" y1="12" x2="16" y2="12"></line>
+                </svg>
+              </div>
+            </a>
+            <!-- Image Card -->
+            <div class="h-[350px] w-full rounded-[32px] overflow-hidden group">
+              <img src="/images/fisioterapi/terapi_wicara_bento.png" alt="Layanan Terapi Wicara" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            </div>
+          </div>
+
+          <!-- Column 3: Terapi Okupasi (Image Top, Text Bottom - Cream) -->
+          <div class="flex flex-col gap-6">
+            <!-- Image Card -->
+            <div class="h-[350px] w-full rounded-[32px] overflow-hidden group">
+              <img src="/images/fisioterapi/terapi_okupasi_bento.png" alt="Layanan Terapi Okupasi" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            </div>
+            <!-- Text Card (Cream) -->
+            <a href="https://wa.me/6285943750988?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Terapi%20Okupasi." target="_blank" class="min-h-[220px] h-fit w-full bg-[#FAF7F2] text-neutral-dark rounded-[32px] px-8 py-7 flex flex-col justify-between text-left hover:bg-[#FAF4EB] transition-all group">
+              <div>
+                <h3 class="text-xl font-bold text-neutral-dark">03. Terapi Okupasi</h3>
+                <p class="text-sm text-neutral-secondary mt-2.5 leading-relaxed">
+                  Melatih fokus, sensorik integrasi, dan kemandirian motorik anak.
+                </p>
+              </div>
+              <div class="inline-flex items-center gap-2 text-xs font-semibold text-brand-primary mt-4">
+                <span>Detail Layanan</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 8 16 12 12 16"></polyline>
+                  <line x1="8" y1="12" x2="16" y2="12"></line>
+                </svg>
+              </div>
+            </a>
+          </div>
+
+          <!-- Column 4: Psikologi Anak (Text Top - Dark Green, Image Bottom) -->
+          <div class="flex flex-col gap-6">
+            <!-- Text Card (Dark Green) -->
+            <a href="https://wa.me/6285943750988?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Psikologi%20Anak." target="_blank" class="min-h-[220px] h-fit w-full bg-brand-forest text-white rounded-[32px] px-8 py-7 flex flex-col justify-between text-left hover:opacity-95 transition-all group">
+              <div>
+                <h3 class="text-xl font-bold">04. Psikologi Anak</h3>
+                <p class="text-sm text-white/90 mt-2.5 leading-relaxed">
+                  Asesmen tumbuh kembang, kognitif, perilaku, dan bimbingan emosi anak.
+                </p>
+              </div>
+              <div class="inline-flex items-center gap-2 text-xs font-semibold text-white mt-4">
+                <span>Detail Layanan</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 8 16 12 12 16"></polyline>
+                  <line x1="8" y1="12" x2="16" y2="12"></line>
+                </svg>
+              </div>
+            </a>
+            <!-- Image Card -->
+            <div class="h-[350px] w-full rounded-[32px] overflow-hidden group">
+              <img src="/images/fisioterapi/psikologi_anak_bento.png" alt="Layanan Psikologi Anak" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Keunggulan Section (Figma Section 1 Layout: Wave Image on the Right) -->
+    <section id="keunggulan" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-[120px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        
+        <!-- Left: Text content -->
+        <div class="flex flex-col gap-6 text-left reveal-element">
+          <h2 class="text-3xl md:text-4xl font-medium leading-[1.15] text-neutral-dark">
+            Layanan Terapi Terintegrasi & Personal
+          </h2>
+          <p class="text-neutral-secondary text-base leading-relaxed">
+            Klinik kami menyediakan pelayanan terapi yang dirancang secara personal untuk setiap pasien, didukung oleh tim terapis berlisensi dan dokter spesialis rehabilitasi medik guna mengoptimalkan proses pemulihan Anda.
+          </p>
+          
+          <!-- Points using Figma SVGs instead of emojis -->
+          <div class="flex flex-col gap-5 mt-2">
+            
+            <div class="flex gap-3 items-start">
+              <!-- Spine & alignment / physical recovery icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 text-brand-primary shrink-0 mt-1" aria-hidden="true">
+                <path d="M12 2v20" stroke-dasharray="1 3" />
+                <circle cx="12" cy="4" r="2" />
+                <path d="M8 9c2-1 6-1 8 0" />
+                <path d="M7 14c3-1.5 7-1.5 10 0" />
+                <path d="M6 19c4-2 8-2 12 0" />
+              </svg>
+              <div class="flex flex-col">
+                <h4 class="font-medium text-neutral-dark text-lg">Terapi & Pemulihan Fisik</h4>
+                <p class="text-sm text-neutral-secondary">Dukung pemulihan kekuatan fisik dan cegah cedera berulang melalui program terapi yang terarah.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-3 items-start">
+              <!-- Medical cross with modern technical orbits/rings -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 text-brand-primary shrink-0 mt-1" aria-hidden="true">
+                <path d="M12 5v14M5 12h14" />
+                <path d="M18.4 5.6a8 8 0 11-12.8 12.8" stroke-dasharray="2 2" />
+                <path d="M5.6 5.6a8 8 0 0112.8 12.8" />
+              </svg>
+              <div class="flex flex-col">
+                <h4 class="font-medium text-neutral-dark text-lg">Metode Terapi Modern</h4>
+                <p class="text-sm text-neutral-secondary">Menggunakan pendekatan stimulasi motorik dan latihan gerak modern untuk hasil yang optimal.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="pt-4">
+            <a href="https://drive.google.com/file/d/1rNcutm8e9Ff9faOezKV68QfnHTF7a-rM/view?usp=sharing" target="_blank" class="btn-outline group">
+              <span>Pelajari Selengkapnya</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 transition-transform duration-200 group-hover:translate-x-1 text-brand-primary">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 8 16 12 12 16"></polyline>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Figma Wave Image 1 -->
+        <div class="relative flex justify-center reveal-element">
+          <div class="w-full max-w-[573px] aspect-square rounded-3xl overflow-hidden">
+            <img src="/images/wave_image_1.png" alt="Wavy medical illustration" class="w-full h-full object-contain" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Dokter Spesialis Section (Figma Section 2 Layout: Wave Image on the Left) -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-[120px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        
+        <!-- Left: Figma Wave Image 2 -->
+        <div class="relative flex justify-center order-2 lg:order-1 reveal-element">
+          <div class="w-full max-w-[573px] aspect-square rounded-3xl overflow-hidden">
+            <img src="/images/wave_image_2.png" alt="Wavy clinical illustration" class="w-full h-full object-contain" />
+          </div>
+        </div>
+
+        <!-- Right: Text content -->
+        <div class="flex flex-col gap-6 text-left order-1 lg:order-2 reveal-element">
+          <h2 class="text-3xl md:text-4xl font-medium leading-[1.15] text-neutral-dark">
+            Dokter Spesialis Praktik & Rehabilitasi Medik
+          </h2>
+          <p class="text-neutral-secondary text-base leading-relaxed">
+            Pemeriksaan awal dan rencana terapi disusun secara kolaboratif oleh dokter spesialis kami untuk memastikan hasil pemulihan yang aman dan maksimal bagi pasien.
+          </p>
+          
+          <div class="flex flex-col gap-4 border-l-2 border-brand-light pl-4 py-2 mt-2">
+            <div>
+              <h4 class="font-bold text-neutral-dark text-base">dr. Nandra Hermanto, Sp.KFR</h4>
+              <p class="text-sm text-neutral-secondary">Spesialis Kedokteran Fisik & Rehabilitasi Medik</p>
+            </div>
+            <div>
+              <h4 class="font-bold text-neutral-dark text-base">dr. Christian Kurnia Wijaya, Sp.PD</h4>
+              <p class="text-sm text-neutral-secondary">Spesialis Penyakit Dalam</p>
+            </div>
+          </div>
+
+          <div class="pt-4">
+            <a href="https://wa.me/6285943750988?text=Halo%20Klinik%20Utama%20Benecia,%20saya%20ingin%20jadwal%20konsultasi%20dokter." target="_blank" class="btn-outline group">
+              <span>Konsultasi Dokter</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 transition-transform duration-200 group-hover:translate-x-1 text-brand-primary">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 8 16 12 12 16"></polyline>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Alur Pelayanan Section (Figma Step-by-Step Layout) -->
+    <section id="alur" class="py-20 bg-gray-50 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 lg:px-[120px]">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto flex flex-col gap-4 mb-16 reveal-element">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-neutral-dark font-medium">Alur Pelayanan Mudah di Klinik Kami</h2>
+          <p class="text-neutral-secondary text-base">
+            Kami berkomitmen untuk memberikan pelayanan rehabilitasi medik dan terapi tumbuh kembang anak terbaik melalui alur yang jelas dan terarah.
+          </p>
+        </div>
+
+        <!-- Horizontal Steps Timeline -->
+        <div class="relative grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-4 lg:gap-8 mb-12">
+          
+          <!-- Connector line using Figma asset -->
+          <div class="hidden md:block absolute top-[44px] left-[12%] right-[12%] h-0.5 bg-gray-200 -z-10"></div>
+          
+          <!-- Step 1 -->
+          <div class="flex flex-col items-center text-center gap-6 bg-white p-6 rounded-2xl border border-gray-100 reveal-element">
+            <div class="h-16 w-16 rounded-lg bg-gray-50 border border-gray-200 flex items-center justify-center shadow-sm shrink-0">
+              <svg preserveAspectRatio="none" overflow="visible" class="h-8 w-8 text-brand-primary" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="DeviceMobileCamera">
+                  <path id="Vector" opacity="0.2" d="M30 6.25V33.75C30 34.413 29.7366 35.0489 29.2678 35.5178C28.7989 35.9866 28.163 36.25 27.5 36.25H12.5C11.837 36.25 11.2011 35.9866 10.7322 35.5178C10.2634 35.0489 10 34.413 10 33.75V6.25C10 5.58696 10.2634 4.95107 10.7322 4.48223C11.2011 4.01339 11.837 3.75 12.5 3.75H27.5C28.163 3.75 28.7989 4.01339 29.2678 4.48223C29.7366 4.95107 30 5.58696 30 6.25Z" fill="currentColor"/>
+                  <path id="Vector_2" d="M27.5 2.5H12.5C11.5054 2.5 10.5516 2.89509 9.84835 3.59835C9.14509 4.30161 8.75 5.25544 8.75 6.25V33.75C8.75 34.7446 9.14509 35.6984 9.84835 36.4017C10.5516 37.1049 11.5054 37.5 12.5 37.5H27.5C28.4946 37.5 29.4484 37.1049 30.1517 36.4017C30.8549 35.6984 31.25 34.7446 31.25 33.75V6.25C31.25 5.25544 30.8549 4.30161 30.1517 3.59835C29.4484 2.89509 28.4946 2.5 27.5 2.5ZM28.75 33.75C28.75 34.0815 28.6183 34.3995 28.3839 34.6339C28.1495 34.8683 27.8315 35 27.5 35H12.5C12.1685 35 11.8505 34.8683 11.6161 34.6339C11.3817 34.3995 11.25 34.0815 11.25 33.75V6.25C11.25 5.91848 11.3817 5.60054 11.6161 5.36612C11.8505 5.1317 12.1685 5 12.5 5H27.5C27.8315 5 28.1495 5.1317 28.3839 5.36612C28.6183 5.60054 28.75 5.91848 28.75 6.25V33.75ZM21.875 9.375C21.875 9.74584 21.765 10.1084 21.559 10.4167C21.353 10.725 21.0601 10.9654 20.7175 11.1073C20.3749 11.2492 19.9979 11.2863 19.6342 11.214C19.2705 11.1416 18.9364 10.963 18.6742 10.7008C18.412 10.4386 18.2334 10.1045 18.161 9.74079C18.0887 9.37708 18.1258 9.00008 18.2677 8.65747C18.4096 8.31486 18.65 8.02202 18.9583 7.81599C19.2666 7.60997 19.6292 7.5 20 7.5C20.4973 7.5 20.9742 7.69754 21.3258 8.04917C21.6775 8.40081 21.875 8.87772 21.875 9.375Z" fill="currentColor"/>
+                </g>
+              </svg>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h4 class="font-medium text-lg text-neutral-dark leading-tight">Langkah 1</h4>
+              <p class="text-sm text-neutral-secondary leading-relaxed">
+                Hubungi WhatsApp admin kami untuk pendaftaran pasien baru dan konsultasi keluhan awal.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="flex flex-col items-center text-center gap-6 bg-white p-6 rounded-2xl border border-gray-100 reveal-element">
+            <div class="h-16 w-16 rounded-lg bg-gray-50 border border-gray-200 flex items-center justify-center shadow-sm shrink-0">
+              <svg preserveAspectRatio="none" overflow="visible" class="h-8 w-8 text-brand-primary" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Clipboard">
+                  <path id="Vector" opacity="0.2" d="M32.5 7.5V33.75C32.5 34.0815 32.3683 34.3995 32.1339 34.6339C31.8995 34.8683 31.5815 35 31.25 35H8.75C8.41848 35 8.10054 34.8683 7.86612 34.6339C7.6317 34.3995 7.5 34.0815 7.5 33.75V7.5C7.5 7.16848 7.6317 6.85054 7.86612 6.61612C8.10054 6.3817 8.41848 6.25 8.75 6.25H15C14.1869 7.33095 13.7481 8.64737 13.75 10V11.25H26.25V10C26.2519 8.64737 25.8131 7.33095 25 6.25H31.25C31.5815 6.25 31.8995 6.3817 32.1339 6.61612C32.3683 6.85054 32.5 7.16848 32.5 7.5Z" fill="currentColor"/>
+                  <path id="Vector_2" d="M31.25 5H25.5844C24.882 4.21363 24.0215 3.58446 23.0592 3.15368C22.0968 2.7229 21.0544 2.50023 20 2.50023C18.9456 2.50023 17.9032 2.7229 16.9408 3.15368C15.9785 3.58446 15.118 4.21363 14.4156 5H8.75C8.08696 5 7.45107 5.26339 6.98223 5.73223C6.51339 6.20107 6.25 6.83696 6.25 7.5V33.75C6.25 34.413 6.51339 35.0489 6.98223 35.5178C7.45107 35.9866 8.08696 36.25 8.75 36.25H31.25C31.913 36.25 32.5489 35.9866 33.0178 35.5178C33.4866 35.0489 33.75 34.413 33.75 33.75V7.5C33.75 6.83696 33.4866 6.20107 33.0178 5.73223C32.5489 5.26339 31.913 5 31.25 5ZM20 5C21.3261 5 22.5979 5.52678 23.5355 6.46447C24.4732 7.40215 25 8.67392 25 10H15C15 8.67392 15.5268 7.40215 16.4645 6.46447C17.4021 5.52678 18.6739 5 20 5ZM31.25 33.75H8.75V7.5H12.9297C12.6453 8.30284 12.5 9.1483 12.5 10V11.25C12.5 11.5815 12.6317 11.8995 12.8661 12.1339C13.1005 12.3683 13.4185 12.5 13.75 12.5H26.25C26.5815 12.5 26.8995 12.3683 27.1339 12.1339C27.3683 11.8995 27.5 11.5815 27.5 11.25V10C27.5 9.1483 27.3547 8.30284 27.0703 7.5H31.25V33.75Z" fill="currentColor"/>
+                </g>
+              </svg>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h4 class="font-medium text-lg text-neutral-dark leading-tight">Langkah 2</h4>
+              <p class="text-sm text-neutral-secondary leading-relaxed">
+                Jadwalkan janji pemeriksaan dengan dokter spesialis untuk menegakkan diagnosis medis Anda.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="flex flex-col items-center text-center gap-6 bg-white p-6 rounded-2xl border border-gray-100 reveal-element">
+            <div class="h-16 w-16 rounded-lg bg-gray-50 border border-gray-200 flex items-center justify-center shadow-sm shrink-0">
+              <svg preserveAspectRatio="none" overflow="visible" class="h-8 w-8 text-brand-primary" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="CheckCircle">
+                  <path id="Vector" opacity="0.2" d="M21 12C21 13.78 20.4722 15.5201 19.4832 17.0001C18.4943 18.4802 17.0887 19.6337 15.4442 20.3149C13.7996 20.9961 11.99 21.1743 10.2442 20.8271C8.49836 20.4798 6.89471 19.6226 5.63604 18.364C4.37737 17.1053 3.5202 15.5016 3.17293 13.7558C2.82567 12.01 3.0039 10.2004 3.68508 8.55585C4.36627 6.91131 5.51983 5.50571 6.99987 4.51677C8.47991 3.52784 10.22 3 12 3C14.387 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z" fill="currentColor"/>
+                  <path id="Vector_2" d="M16.2806 9.21938C16.3504 9.28903 16.4057 9.37175 16.4434 9.4628C16.4812 9.55384 16.5006 9.65144 16.5006 9.75C16.5006 9.84856 16.4812 9.94616 16.4434 10.0372C16.4057 10.1283 16.3504 10.211 16.2806 10.2806L11.0306 13.2806C10.961 15.6004 10.8783 15.6557 10.7872 15.6934C10.6962 15.7312 10.5986 15.7506 10.5 15.7506C10.4014 15.7506 10.3038 15.7312 10.2128 15.6934C10.1217 15.6557 10.039 15.6004 9.96938 15.5306L7.71938 13.2806C7.57865 13.1399 7.49958 12.949 7.49958 12.75C7.49958 12.551 7.57865 12.3601 7.71938 12.2194C7.86011 12.0786 8.05098 11.9996 8.25 11.9996C8.44902 11.9996 8.6399 12.0786 8.78063 12.2194L10.5 13.9397L15.2194 9.21938C15.289 9.14964 15.3717 9.09432 15.4628 9.05658C15.5538 9.01884 15.6514 8.99941 15.75 8.99941C15.8486 8.99941 15.9462 9.01884 16.0372 9.05658C16.1283 9.09432 16.211 9.14964 16.2806 9.21938ZM21.75 12C21.75 13.9284 21.1782 15.8134 20.1068 17.4168C19.0355 19.0202 17.5127 20.2699 15.7312 21.0078C13.9496 21.7458 11.9892 21.9389 10.0979 21.5627C8.20656 21.1865 6.46927 20.2579 5.10571 18.8943C3.74215 17.5307 2.81355 15.7934 2.43734 13.9021C2.06114 12.0108 2.25422 10.0504 2.99218 8.26884C3.73013 6.48726 4.97981 4.96452 6.58319 3.89317C8.18657 2.82183 10.0716 2.25 12 2.25C14.585 2.25273 17.0634 3.28084 18.8913 5.10872C20.7192 6.93661 21.7473 9.41498 21.75 12ZM20.25 12C20.25 10.3683 19.7661 8.77325 18.8596 7.41655C17.9531 6.05984 16.6646 5.00242 15.1571 4.37799C13.6496 3.75357 11.9908 3.59019 10.3905 3.90852C8.79016 4.22685 7.32015 5.01259 6.16637 6.16637C5.01259 7.32015 4.22685 8.79016 3.90852 10.3905C3.59019 11.9908 3.75357 13.6496 4.37799 15.1571C5.00242 16.6646 6.05984 17.9531 7.41655 18.8596C8.77325 19.7661 10.3683 20.25 12 20.25C14.1873 20.2475 16.2843 19.3775 17.8309 17.8309C19.3775 16.2843 20.2475 14.1873 20.25 12Z" fill="currentColor"/>
+                </g>
+              </svg>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h4 class="font-medium text-lg text-neutral-dark leading-tight">Langkah 3</h4>
+              <p class="text-sm text-neutral-secondary leading-relaxed">
+                Terapis merancang program sesi terapi rutin secara terjadwal berdasarkan arahan dokter.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="flex flex-col items-center text-center gap-6 bg-white p-6 rounded-2xl border border-gray-100 reveal-element">
+            <div class="h-16 w-16 rounded-lg bg-gray-50 border border-gray-200 flex items-center justify-center shadow-sm shrink-0">
+              <svg preserveAspectRatio="none" overflow="visible" class="h-8 w-8 text-brand-primary" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="FirstAid">
+                  <path id="Vector" opacity="0.2" d="M35 16.25V23.75C35 24.0815 34.8683 24.3995 34.6339 24.6339C34.3995 24.8683 34.0815 25 33.75 25H25V33.75C25 34.0815 24.8683 34.3995 24.6339 34.6339C24.3995 34.8683 24.0815 35 23.75 35H16.25C15.9185 35 15.6005 34.8683 15.3661 34.6339C15.1317 34.3995 15 34.0815 15 33.75V25H6.25C5.91848 25 5.60054 24.8683 5.36612 24.6339C5.1317 24.3995 5 24.0815 5 23.75V16.25C5 15.9185 5.1317 15.6005 5.36612 15.3661C5.60054 15.1317 5.91848 15 6.25 15H15V6.25C15 5.91848 15.1317 5.60054 15.3661 5.36612C15.6005 5.1317 15.9185 5 16.25 5H23.75C24.0815 5 24.3995 5.1317 24.6339 5.36612C24.8683 5.60054 25 5.91848 25 6.25V15H33.75C34.0815 15 34.3995 15.1317 34.6339 15.3661C34.8683 15.6005 35 15.9185 35 16.25Z" fill="currentColor"/>
+                  <path id="Vector_2" d="M33.75 13.75H26.25V6.25C26.25 5.58696 25.9866 4.95107 25.5178 4.48223C25.0489 4.01339 24.413 3.75 23.75 3.75H16.25C15.587 3.75 14.9511 4.01339 14.4822 4.48223C14.0134 4.95107 13.75 5.58696 13.75 6.25V13.75H6.25C5.58696 13.75 4.95107 14.0134 4.48223 14.4822C4.01339 14.9511 3.75 15.587 3.75 16.25V23.75C3.75 24.413 4.01339 25.0489 4.48223 25.5178C4.95107 25.9866 5.58696 26.25 6.25 26.25H13.75V33.75C13.75 34.413 14.0134 35.0489 14.4822 35.5178C14.9511 35.9866 15.587 36.25 16.25 36.25H23.75C24.413 36.25 25.0489 35.9866 25.5178 35.5178C25.9866 35.0489 26.25 34.413 26.25 33.75V26.25H33.75C34.413 26.25 35.0489 25.9866 35.5178 25.5178C35.9866 25.0489 36.25 24.413 36.25 23.75V16.25C36.25 15.587 35.9866 14.9511 35.5178 14.4822C35.0489 14.0134 34.413 13.75 33.75 13.75ZM33.75 23.75H25C24.6685 23.75 24.3505 23.8817 24.1161 24.1161C23.8817 24.3505 23.75 24.6685 23.75 25V33.75H16.25V25C16.25 24.6685 16.1183 24.3505 15.8839 24.1161C15.6495 23.8817 15.3315 23.75 15 23.75H6.25V16.25H15C15.3315 16.25 15.6495 16.1183 15.8839 15.8839C16.1183 15.6495 16.25 15.3315 16.25 15V6.25H23.75V15C23.75 15.3315 23.8817 15.6495 24.1161 15.8839C24.3505 16.1183 24.6685 16.25 25 16.25H33.75V23.75Z" fill="currentColor"/>
+                </g>
+              </svg>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h4 class="font-medium text-lg text-neutral-dark leading-tight">Langkah 4</h4>
+              <p class="text-sm text-neutral-secondary leading-relaxed">
+                Pelaksanaan latihan fisik atau stimulasi dengan evaluasi progres berkala secara teratur.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section (Interactive Premium Dark Carousel with Floating Therapy Elements) -->
+    <section id="ulasan" class="py-20 bg-neutral-footer text-white overflow-hidden relative">
+      <div class="max-w-7xl mx-auto px-6 lg:px-[120px]">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto flex flex-col gap-2 mb-16 reveal-element">
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-secondary">Ulasan Pasien</span>
+          <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-white mt-1 leading-tight">
+            Apa Kata Mereka yang Telah Sembuh
+          </h2>
+          <p class="text-white/70 text-sm md:text-base mt-2">
+            Pendapat nyata mereka yang telah menjalani terapi dan pemulihan bersama Klinik Utama Benecia.
+          </p>
+        </div>
+
+        <!-- Interactive Widget -->
+        <div class="relative max-w-2xl mx-auto flex flex-col items-center select-none reveal-element">
+          
+          <!-- Style override for gentle float animations -->
+          <style>
+            @keyframes gentle-float {
+              0%, 100% { transform: translateY(0); }
+              50% { transform: translateY(-8px); }
+            }
+            @keyframes gentle-float-delayed {
+              0%, 100% { transform: translateY(0); }
+              50% { transform: translateY(8px); }
+            }
+            .animate-float-1 { animation: gentle-float 4s ease-in-out infinite; }
+            .animate-float-2 { animation: gentle-float-delayed 4.5s ease-in-out infinite; }
+            .animate-float-3 { animation: gentle-float 5s ease-in-out infinite; }
+          </style>
+
+          <!-- Floating Therapy-Related SVG Elements -->
+          <!-- 1. Dumbbell (Fisioterapi) -->
+          <div class="absolute -top-14 left-0 md:left-6 opacity-60 text-brand-secondary animate-float-1 pointer-events-none" title="Fisioterapi">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-8 w-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18H2v-4h4v4ZM22 10h-4V6h4v4ZM6 14l12-4M8 10h4v4H8v-4Z" />
+            </svg>
+          </div>
+
+          <!-- 2. Puzzle Piece (Terapi Okupasi/Sensorik) -->
+          <div class="absolute -top-8 right-6 md:right-12 opacity-60 text-brand-secondary animate-float-2 pointer-events-none" title="Terapi Okupasi">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-8 w-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
+            </svg>
+          </div>
+
+          <!-- 3. Heartbeat / EKG (Rehabilitasi Medis) -->
+          <div class="absolute top-24 -left-12 opacity-60 text-brand-secondary animate-float-3 pointer-events-none" title="Rehabilitasi Medis">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-8 w-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M22 12h-4l-3 9L9 3l-3 9H2" />
+            </svg>
+          </div>
+
+          <!-- 4. Chat Bubble (Terapi Wicara) -->
+          <div class="absolute top-28 -right-10 opacity-60 text-brand-secondary animate-float-1 pointer-events-none" title="Terapi Wicara">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-8 w-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+            </svg>
+          </div>
+
+          <!-- 5. First Aid Kit (Care) -->
+          <div class="absolute -top-16 left-1/2 -translate-x-1/2 opacity-30 text-brand-secondary animate-float-3 pointer-events-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-7 w-7">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h10a2 2 0 012 2v14a2 2 0 01-2 2z" />
+            </svg>
+          </div>
+
+          <!-- Arch of Avatars (floating above the card with client portrait photos) -->
+          <div class="flex items-center gap-6 mb-10 z-10">
+            
+            <!-- Avatar 1: Budianto -->
+            <button id="avatar-btn-0" onclick="setTestimonial(0)" class="h-12 w-12 md:h-14 md:w-14 rounded-full overflow-hidden border-3 transition-all duration-300 transform hover:scale-110 cursor-pointer shadow-md border-transparent" title="Ulasan Budianto">
+              <img src="/images/fisioterapi/budianto_avatar.png" alt="Budianto" class="w-full h-full object-cover" />
+            </button>
+
+            <!-- Avatar 2: Rina -->
+            <button id="avatar-btn-1" onclick="setTestimonial(1)" class="h-12 w-12 md:h-14 md:w-14 rounded-full overflow-hidden border-3 transition-all duration-300 transform hover:scale-110 cursor-pointer shadow-md border-transparent" title="Ulasan Rina">
+              <img src="/images/fisioterapi/rina_avatar.png" alt="Rina" class="w-full h-full object-cover" />
+            </button>
+
+            <!-- Avatar 3: Susi -->
+            <button id="avatar-btn-2" onclick="setTestimonial(2)" class="h-12 w-12 md:h-14 md:w-14 rounded-full overflow-hidden border-3 transition-all duration-300 transform hover:scale-110 cursor-pointer shadow-md border-transparent" title="Ulasan Susi">
+              <img src="/images/fisioterapi/susi_avatar.png" alt="Susi" class="w-full h-full object-cover" />
+            </button>
+
+          </div>
+
+          <!-- Main Card & Side Arrows Flex Container -->
+          <div class="flex items-center w-full justify-between gap-4 md:gap-8">
+            
+            <!-- Left Arrow -->
+            <button onclick="prevTestimonial()" class="h-11 w-11 rounded-full border border-gray-700 text-gray-400 hover:text-white hover:border-white flex items-center justify-center transition-colors shrink-0 cursor-pointer" aria-label="Sebelumnya">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-5 w-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+              </svg>
+            </button>
+
+            <!-- Central Testimonial Card (Brand-Light background, Flat/No-Shadow, Neutral-Dark text) -->
+            <div class="flex-grow max-w-xl bg-brand-light text-neutral-dark rounded-[32px] p-8 md:p-10 text-center relative transition-all duration-300 min-h-[300px] flex flex-col justify-between">
+              
+              <div>
+                <!-- Client photo avatar inside card -->
+                <img id="card-avatar" class="h-16 w-16 rounded-full border-2 border-brand-primary mx-auto mb-6 object-cover shadow-sm" src="/images/fisioterapi/budianto_avatar.png" alt="Budianto" />
+
+                <!-- Star rating inside card -->
+                <div class="flex justify-center gap-1 mb-5 text-amber-400">
+                  <svg class="h-4.5 w-4.5 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg class="h-4.5 w-4.5 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg class="h-4.5 w-4.5 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg class="h-4.5 w-4.5 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg class="h-4.5 w-4.5 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                </div>
+
+                <!-- Quote -->
+                <p id="card-quote" class="text-neutral-dark text-sm md:text-base leading-relaxed italic mb-8 px-2 md:px-4">
+                  "Fisioterapi dewasa di Klinik Benecia sangat profesional. Nyeri sendi lutut saya berkurang drastis setelah berkonsultasi dengan dr. Nandra dan menjalani terapi berkala."
+                </p>
+              </div>
+
+              <!-- Reviewer Details -->
+              <div>
+                <h5 id="card-name" class="font-bold text-base text-neutral-dark leading-tight">Budianto</h5>
+                <span id="card-title" class="text-xs text-neutral-secondary mt-1.5 block font-medium">Pasien Fisioterapi (45 Tahun)</span>
+              </div>
+
+            </div>
+
+            <!-- Right Arrow -->
+            <button onclick="nextTestimonial()" class="h-11 w-11 rounded-full border border-gray-700 text-gray-400 hover:text-white hover:border-white flex items-center justify-center transition-colors shrink-0 cursor-pointer" aria-label="Berikutnya">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-5 w-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </button>
+
+          </div>
+
+          <!-- Pagination Dots -->
+          <div class="flex gap-2 mt-10">
+            <button onclick="setTestimonial(0)" id="dot-0" class="h-2.5 rounded-full transition-all duration-300 w-6 bg-brand-primary cursor-pointer" aria-label="Slide 1"></button>
+            <button onclick="setTestimonial(1)" id="dot-1" class="h-2.5 rounded-full transition-all duration-300 w-2 bg-gray-600 cursor-pointer" aria-label="Slide 2"></button>
+            <button onclick="setTestimonial(2)" id="dot-2" class="h-2.5 rounded-full transition-all duration-300 w-2 bg-gray-600 cursor-pointer" aria-label="Slide 3"></button>
+          </div>
+
+        </div>
+      </div>
+      
+      <!-- Script for controlling testimonial carousel -->
+      <script>
+        const testimonials = [
+          {
+            avatar: "/images/fisioterapi/budianto_avatar.png",
+            quote: `"Fisioterapi dewasa di Klinik Benecia sangat profesional. Nyeri sendi lutut saya berkurang drastis setelah berkonsultasi dengan dr. Nandra dan menjalani terapi berkala."`,
+            name: "Budianto",
+            title: "Pasien Fisioterapi (45 Tahun)"
+          },
+          {
+            avatar: "/images/fisioterapi/rina_avatar.png",
+            quote: `"Terapis wicara di Benecia sangat sabar dan ramah. Anak saya yang tadinya terlambat bicara sekarang sudah aktif berkomunikasi dan lancar merangkai kalimat."`,
+            name: "Rina",
+            title: "Ibu dari Alvian (4 Tahun)"
+          },
+          {
+            avatar: "/images/fisioterapi/susi_avatar.png",
+            quote: `"Tempatnya bersih, wangi, dan ramah anak. Terapis okupasi di sini merancang latihan sensorik lewat permainan seru, jadi anak saya selalu bersemangat tiap jadwal terapi."`,
+            name: "Susi",
+            title: "Ibu dari Keisha (6 Tahun)"
+          }
+        ];
+
+        let currentIdx = 0;
+
+        function setTestimonial(idx) {
+          currentIdx = idx;
+          
+          // Update card details
+          document.getElementById('card-avatar').src = testimonials[idx].avatar;
+          document.getElementById('card-avatar').alt = testimonials[idx].name;
+          document.getElementById('card-quote').innerText = testimonials[idx].quote;
+          document.getElementById('card-name').innerText = testimonials[idx].name;
+          document.getElementById('card-title').innerText = testimonials[idx].title;
+          
+          // Update active states
+          for (let i = 0; i < 3; i++) {
+            const btn = document.getElementById(`avatar-btn-${i}`);
+            const dot = document.getElementById(`dot-${i}`);
+            
+            if (i === idx) {
+              btn.classList.remove('border-transparent');
+              btn.classList.add('border-brand-primary', 'scale-110');
+              dot.classList.remove('w-2', 'bg-gray-600');
+              dot.classList.add('w-6', 'bg-brand-primary');
+            } else {
+              btn.classList.remove('border-brand-primary', 'scale-110');
+              btn.classList.add('border-transparent');
+              dot.classList.remove('w-6', 'bg-brand-primary');
+              dot.classList.add('w-2', 'bg-gray-600');
+            }
+          }
+        }
+
+        function nextTestimonial() {
+          setTestimonial((currentIdx + 1) % testimonials.length);
+        }
+
+        function prevTestimonial() {
+          setTestimonial((currentIdx - 1 + testimonials.length) % testimonials.length);
+        }
+
+        // Initialize carousel on DOM load
+        document.addEventListener('DOMContentLoaded', () => {
+          setTestimonial(0);
+        });
+      </script>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-6">
+        
+        <!-- Header -->
+        <div class="text-center flex flex-col gap-4 mb-16 reveal-element">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-neutral-dark font-medium">Pertanyaan yang Sering Diajukan</h2>
+          <p class="text-neutral-secondary text-base">
+            Informasi cepat mengenai pelayanan, jadwal praktik, dan pemesanan sesi terapi di klinik kami.
+          </p>
+        </div>
+
+        <!-- FAQ Items -->
+        <div class="flex flex-col gap-4">
+          
+          <!-- Item 1 -->
+          <div class="faq-item bg-white border border-gray-100 rounded-2xl p-6 shadow-sm reveal-element transition-all duration-300">
+            <button class="faq-toggle w-full flex justify-between items-center text-left font-semibold text-lg text-neutral-dark hover:text-brand-primary focus:outline-none">
+              <span class="flex items-center gap-3.5">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-brand-primary shrink-0">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>Bagaimana cara melakukan reservasi jadwal terapi?</span>
+              </span>
+              <img src="/images/chevron_down.svg" alt="" class="faq-icon h-5 w-5 text-gray-400" />
+            </button>
+            <div class="faq-content mt-4 text-neutral-secondary text-sm leading-relaxed">
+              <p>Anda cukup menekan tombol "Reservasi Sekarang" di situs ini untuk terhubung langsung ke admin WhatsApp kami. Admin akan memandu Anda untuk mengisi data nama, usia, serta mengonfirmasi jadwal janji temu dengan dokter spesialis.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="faq-item bg-white border border-gray-100 rounded-2xl p-6 shadow-sm reveal-element transition-all duration-300">
+            <button class="faq-toggle w-full flex justify-between items-center text-left font-semibold text-lg text-neutral-dark hover:text-brand-primary focus:outline-none">
+              <span class="flex items-center gap-3.5">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-brand-primary shrink-0">
+                  <path d="M4.5 2v12a6 6 0 0 0 12 0v-2"></path>
+                  <circle cx="10.5" cy="14" r="3"></circle>
+                  <path d="M16.5 12h4"></path>
+                  <path d="M20.5 8v8"></path>
+                </svg>
+                <span>Apakah ada dokter spesialis yang berpraktik setiap hari?</span>
+              </span>
+              <img src="/images/chevron_down.svg" alt="" class="faq-icon h-5 w-5 text-gray-400" />
+            </button>
+            <div class="faq-content mt-4 text-neutral-secondary text-sm leading-relaxed">
+              <p>Praktik dokter spesialis kami adalah dr. Nandra Hermanto, Sp.KFR (Spesialis Kedokteran Fisik & Rehabilitasi Medik) dan dr. Christian Kurnia Wijaya, Sp.PD (Spesialis Penyakit Dalam). Pemeriksaan klinis awal memerlukan janji temu terlebih dahulu (by appointment) melalui WhatsApp.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="faq-item bg-white border border-gray-100 rounded-2xl p-6 shadow-sm reveal-element transition-all duration-300">
+            <button class="faq-toggle w-full flex justify-between items-center text-left font-semibold text-lg text-neutral-dark hover:text-brand-primary focus:outline-none">
+              <span class="flex items-center gap-3.5">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-brand-primary shrink-0">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>Kapan jam operasional pelayanan Klinik Utama Benecia?</span>
+              </span>
+              <img src="/images/chevron_down.svg" alt="" class="faq-icon h-5 w-5 text-gray-400" />
+            </button>
+            <div class="faq-content mt-4 text-neutral-secondary text-sm leading-relaxed">
+              <p>Kami melayani pasien dari hari Senin hingga Sabtu mulai pukul 08:00 WIB sampai dengan 20:00 WIB. Khusus untuk hari Minggu dan Hari Libur Nasional, klinik kami tutup, kecuali untuk sesi terapi yang telah dijadwalkan secara khusus sebelumnya.</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="faq-item bg-white border border-gray-100 rounded-2xl p-6 shadow-sm reveal-element transition-all duration-300">
+            <button class="faq-toggle w-full flex justify-between items-center text-left font-semibold text-lg text-neutral-dark hover:text-brand-primary focus:outline-none">
+              <span class="flex items-center gap-3.5">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-brand-primary shrink-0">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Di mana lokasi tepat dari Klinik Utama Benecia?</span>
+              </span>
+              <img src="/images/chevron_down.svg" alt="" class="faq-icon h-5 w-5 text-gray-400" />
+            </button>
+            <div class="faq-content mt-4 text-neutral-secondary text-sm leading-relaxed">
+              <p>Klinik kami beralamat di Jalan Semarang Indah Blok C IV No 22, Kelurahan Tawangmas, Kota Semarang, Jawa Tengah 50144. Anda juga dapat melihat rute detail peta Google Maps dengan menekan tombol lokasi di bagian bawah halaman.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-neutral-footer text-white relative overflow-hidden">
+      <!-- Decorative radial gradient -->
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(0,118,96,0.15),transparent_60%)]"></div>
+      
+      <div class="max-w-5xl mx-auto px-6 text-center flex flex-col items-center gap-6 relative z-10 reveal-element">
+        <h2 class="text-3xl md:text-5xl font-bold tracking-tight">Tumbuh Kembang Optimal & Tubuh Sehat Bebas Nyeri</h2>
+        <p class="text-brand-light/80 text-base md:text-lg max-w-2xl">
+          Konsultasikan keluhan motorik anak atau rehabilitasi fisik pasca-stroke/cedera Anda dengan spesialis kedokteran rehabilitasi kami sekarang.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 pt-4 w-full sm:w-auto">
+          <a href="https://wa.me/6285943750988?text=Halo%20Klinik%20Utama%20Benecia,%20saya%20memiliki%20pertanyaan." target="_blank" class="btn-primary py-4 px-8 text-base">
+            <span>Reservasi via WhatsApp</span>
+          </a>
+          <a href="https://drive.google.com/file/d/1rNcutm8e9Ff9faOezKV68QfnHTF7a-rM/view?usp=sharing" target="_blank" class="inline-flex items-center justify-center border border-white/20 hover:border-white/50 hover:bg-white/5 text-white font-semibold px-8 py-4 rounded-xl text-base transition-colors">
+            Katalog Layanan
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-footer border-t border-white/10 text-white/60 py-16 relative">
+      <div class="max-w-7xl mx-auto px-6 lg:px-[120px] grid grid-cols-1 md:grid-cols-12 gap-12">
+        
+        <!-- Left: Logo & Info -->
+        <div class="md:col-span-5 flex flex-col gap-6">
+          <a href="#" class="flex items-center gap-3">
+            <img src="/images/logo_benecia.avif" alt="Logo Klinik Utama Benecia" class="h-10 w-auto object-contain brightness-0 invert" />
+          </a>
+          <p class="text-sm leading-relaxed text-white/60 text-left">
+            Klinik Utama Benecia menyediakan layanan rehabilitasi medik komprehensif, fisioterapi dewasa, terapi wicara, terapi okupasi, dan psikologi anak di Semarang.
+          </p>
+          <div class="flex gap-4">
+            <a href="https://www.instagram.com/klinikbenecia/" target="_blank" class="hover:text-white transition-colors" aria-label="Instagram">
+              <!-- Instagram Icon -->
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/klinikbenecia" target="_blank" class="hover:text-white transition-colors" aria-label="Facebook">
+              <!-- Facebook Icon -->
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8H7v3h2v9h4v-9h3.61L17 8h-3V6.27A1 1 0 0115 5h2V2h-3a4.14 4.14 0 00-4.14 4.14V8z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Middle: Operational Hour & Address -->
+        <div class="md:col-span-4 flex flex-col gap-4 text-left">
+          <h4 class="text-white font-semibold text-sm uppercase tracking-wider">Jam Operasional & Lokasi</h4>
+          <div class="flex flex-col gap-2 text-sm text-white/60">
+            <p><span class="text-white font-medium">Senin - Sabtu:</span> 08:00 - 20:00 WIB</p>
+            <p><span class="text-white font-medium">Minggu & Tgl Merah:</span> Libur (Kecuali Janji Temu Terjadwal)</p>
+          </div>
+          <p class="text-sm text-white/60 leading-relaxed mt-2 text-left">
+            Jl. Semarang Indah Blok C IV No 22, Tawangmas, Kota Semarang, Jawa Tengah 50144
+          </p>
+        </div>
+
+        <!-- Right: Fast links -->
+        <div class="md:col-span-3 flex flex-col gap-4 text-left">
+          <h4 class="text-white font-semibold text-sm uppercase tracking-wider">Tautan Cepat</h4>
+          <div class="flex flex-col gap-3 text-sm">
+            <a href="https://goo.gl/maps/cWw5F8pD2zWd549L9" target="_blank" class="flex items-center gap-2.5 hover:text-white transition-colors">
+              <svg class="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span>Lihat Peta Google Maps</span>
+            </a>
+            <a href="mailto:klinikbenecia1@gmail.com" class="flex items-center gap-2.5 hover:text-white transition-colors">
+              <svg class="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <span>klinikbenecia1@gmail.com</span>
+            </a>
+            <a href="https://wa.me/6285943750988" class="flex items-center gap-2.5 hover:text-white transition-colors">
+              <svg class="h-4 w-4 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.248 8.477 3.517 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.719-1.465L0 24zm6.59-2.046c1.652.981 3.27 1.499 5.343 1.5 5.568 0 10.102-4.524 10.104-10.088.001-2.695-1.045-5.228-2.946-7.13C17.247 4.333 14.73 3.288 12.012 3.288c-5.576 0-10.108 4.528-10.112 10.093-.002 2.01.524 3.972 1.523 5.705l-.989 3.61 3.71-.973zm12.39-7.37c-.328-.163-1.94-.957-2.24-1.066-.3-.11-.518-.163-.738.163-.22.329-.85.738-1.04.956-.19.219-.38.246-.708.082-.328-.163-1.386-.51-2.637-1.628-.973-.868-1.629-1.94-1.82-2.267-.19-.328-.02-.505.144-.668.149-.147.329-.382.493-.574.163-.19.219-.328.329-.548.11-.219.055-.41-.027-.574-.083-.163-.738-1.78-.93-2.267-.206-.496-.413-.412-.566-.42l-.48-.009c-.163 0-.43.06-.653.3-.223.24-.85.83-.85 2.028s.874 2.35 1.01 2.53c.137.18 1.719 2.63 4.16 3.684.58.25 1.034.4 1.39.513.582.185 1.112.159 1.53.097.467-.069 1.94-.793 2.214-1.52.274-.727.274-1.35.19-1.48-.083-.127-.3-.22-.627-.383z" />
+              </svg>
+              <span>Whatsapp: 0859-4375-0988</span>
+            </a>
+            <a href="https://drive.google.com/file/d/1rNcutm8e9Ff9faOezKV68QfnHTF7a-rM/view?usp=sharing" target="_blank" class="flex items-center gap-2.5 hover:text-white transition-colors">
+              <svg class="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              <span>Unduh Katalog Layanan</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="max-w-7xl mx-auto px-6 lg:px-[120px] border-t border-white/10 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+        <p>© 2026 oleh Klinik Utama Benecia. Seluruh hak cipta dilindungi.</p>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-white transition-colors">Syarat & Ketentuan</a>
+          <a href="#" class="hover:text-white transition-colors">Kebijakan Privasi</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

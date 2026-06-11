@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/avif" href="/images/logo_benecia.avif" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layanan Fisioterapi | Klinik Utama Benecia Semarang</title>
+    <meta name="description" content="Layanan Fisioterapi dewasa dan anak Klinik Utama Benecia Semarang. Pemulihan stroke, cedera otot, saraf kejepit, dan Bell's Palsy bersama terapis berlisensi." />
+    <!-- Google Fonts Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body class="font-sans text-neutral-dark bg-white">
+    
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-6 border-b border-transparent">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between">
+        
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-3 group">
+          <img src="/images/logo_benecia.avif" alt="Logo Klinik Utama Benecia" class="nav-logo h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden md:flex items-center gap-8 font-medium text-sm">
+          <a href="index.html#layanan" class="nav-link transition-colors py-2">Layanan</a>
+          <a href="#keadaan" class="nav-link transition-colors py-2">Indikasi</a>
+          <a href="#therapist" class="nav-link transition-colors py-2">Terapis Kami</a>
+          <a href="#babyspa" class="nav-link transition-colors py-2">Baby Spa</a>
+        </div>
+
+        <!-- Desktop CTA -->
+        <div class="hidden md:flex items-center gap-4">
+          <a href="https://drive.google.com/file/d/1rNcutm8e9Ff9faOezKV68QfnHTF7a-rM/view?usp=sharing" target="_blank" class="btn-outline btn-sm">Katalog</a>
+          <a href="https://wa.me/6285943750988?text=Halo%20Klinik%20Utama%20Benecia,%20saya%20ingin%20reservasi%20layanan%20Fisioterapi." target="_blank" class="btn-primary btn-sm">
+            Reservasi Terapi
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 focus:outline-none transition-colors duration-200" aria-label="Buka Menu">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-lg py-4 px-6 flex flex-col gap-4">
+        <a href="index.html#layanan" class="mobile-link text-neutral-secondary font-medium py-2 border-b border-gray-50">Layanan</a>
+        <a href="#keadaan" class="mobile-link text-neutral-secondary font-medium py-2 border-b border-gray-50">Indikasi</a>
+        <a href="#therapist" class="mobile-link text-neutral-secondary font-medium py-2 border-b border-gray-50">Terapis Kami</a>
+        <a href="#babyspa" class="mobile-link text-neutral-secondary font-medium py-2 border-b border-gray-50">Baby Spa</a>
+        <div class="flex flex-col gap-3 pt-2">
+          <a href="https://drive.google.com/file/d/1rNcutm8e9Ff9faOezKV68QfnHTF7a-rM/view?usp=sharing" target="_blank" class="btn-outline w-full py-2.5">Katalog Layanan</a>
+          <a href="https://wa.me/6285943750988?text=Halo%20Klinik%20Utama%20Benecia,%20saya%20ingin%20reservasi%20layanan%20Fisioterapi." target="_blank" class="btn-primary w-full py-3">Reservasi Terapi</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Fisioterapi Hero Section — Full Viewport Layout with Background Image & Pill Button -->
+    <section class="relative min-h-screen flex items-end pt-32 pb-20 px-6 lg:px-[120px] overflow-hidden text-white">
+      <!-- Background Image with Overlay -->
+      <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('/images/physiotherapy.png');"></div>
+      <div class="absolute inset-0 bg-[#22120a]/55 z-0"></div> <!-- dark brand-colored overlay for legibility -->
+
+      <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-end relative z-10 reveal-element">
+        <!-- Left: Text Content (8 columns) -->
+        <div class="lg:col-span-8 flex flex-col gap-6 text-left">
+          <h1 class="text-4xl md:text-5xl lg:text-[3.5rem] font-bold tracking-tight text-white leading-[1.1] font-sans">
+            Mengembalikan Fungsi dan Gerak Optimal Tubuh Anda
+          </h1>
+          <p class="text-base md:text-lg text-brand-light/90 leading-relaxed max-w-2xl">
+            Fisioterapi adalah tindakan rehabilitasi medis untuk menghindari atau meminimalkan keterbatasan fisik akibat cedera, penyakit, maupun gangguan gerak. Program kami disesuaikan bagi pasien dewasa maupun stimulasi motorik anak.
+          </p>
+
+          <!-- Trust badges in white/10 overlay -->
+          <div class="flex flex-wrap gap-3 pt-2">
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-white bg-white/10 border border-white/10 px-3 py-2 rounded-full backdrop-blur-xs">
+              <img src="/images/check_circle.svg" alt="" class="h-4 w-4 invert brightness-0" /> Terapis Berlisensi STR
+            </span>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-white bg-white/10 border border-white/10 px-3 py-2 rounded-full backdrop-blur-xs">
+              <img src="/images/check_circle.svg" alt="" class="h-4 w-4 invert brightness-0" /> Dewasa & Anak
+            </span>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-white bg-white/10 border border-white/10 px-3 py-2 rounded-full backdrop-blur-xs">
+              <img src="/images/check_circle.svg" alt="" class="h-4 w-4 invert brightness-0" /> Jadwal Fleksibel
+            </span>
+          </div>
+        </div>
+
+        <!-- Right: Pill CTA Button (4 columns, aligned to bottom right) -->
+        <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-4 justify-start lg:items-end">
+          <a href="https://wa.me/6285943750988?text=Halo%20Klinik%20Utama%20Benecia,%20saya%20ingin%20reservasi%20layanan%20Fisioterapi." target="_blank" 
+             class="inline-flex items-center gap-4 bg-brand-primary hover:bg-brand-primary-hover text-white p-2 pr-6 rounded-full hover:scale-105 transition-transform duration-300 shadow-xl group w-fit">
+            <span class="h-12 w-12 rounded-full bg-white flex items-center justify-center transition-transform duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="arrow-icon-bounce w-5 h-5 text-brand-primary transition-transform duration-300">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </span>
+            <span class="font-bold text-sm tracking-wide text-white">Reservasi Terapi</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Indikasi Keadaan Section — Text-only with cards -->
+    <section id="keadaan" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-6 lg:px-[120px]">
+        
+        <!-- Header -->
+        <div class="max-w-2xl mb-12 reveal-element">
+          <h2 class="text-3xl md:text-4xl font-medium leading-[1.15] text-neutral-dark mb-4">
+            Keadaan yang Memerlukan Tindakan Fisioterapi
+          </h2>
+          <p class="text-neutral-secondary text-base leading-relaxed">
+            Fisioterapi sangat dianjurkan untuk memulihkan kapasitas fisik, mengurangi keluhan nyeri, dan meminimalkan gangguan gerak fungsional akibat kondisi berikut.
+          </p>
+        </div>
+
+        <!-- Condition Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 reveal-element">
+
+          <div class="bg-white rounded-2xl p-6 flex gap-4 items-start shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-10 h-10 rounded-xl bg-brand-light/40 flex items-center justify-center shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-5 w-5 text-brand-primary">
+                <!-- Joint pain representation: bent limb with pain waves -->
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 18l6-6V4" />
+                <circle cx="10" cy="12" r="1.5" class="fill-brand-primary" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 8a4 4 0 010 8" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M18 6a7 7 0 010 12" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-neutral-dark text-sm">Nyeri Otot, Sendi & Saraf</h3>
+              <p class="text-xs text-neutral-secondary mt-1 leading-relaxed">Cedera otot, radang sendi, atau nyeri saraf yang membatasi pergerakan sehari-hari.</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 flex gap-4 items-start shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-10 h-10 rounded-xl bg-brand-light/40 flex items-center justify-center shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-5 w-5 text-brand-primary">
+                <!-- Brain outline for Stroke Recovery -->
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.44 2.5 2.5 0 0 1 0-3.12 3 3 0 0 1 0-4.88 2.5 2.5 0 0 1 0-3.12A2.5 2.5 0 0 1 9.5 2Z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.44 2.5 2.5 0 0 0 0-3.12 3 3 0 0 0 0-4.88 2.5 2.5 0 0 0 0-3.12A2.5 2.5 0 0 0 14.5 2Z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-neutral-dark text-sm">Pemulihan Stroke</h3>
+              <p class="text-xs text-neutral-secondary mt-1 leading-relaxed">Rehabilitasi gerak dan fungsi tubuh pasca serangan stroke untuk kembali mandiri.</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 flex gap-4 items-start shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-10 h-10 rounded-xl bg-brand-light/40 flex items-center justify-center shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-5 w-5 text-brand-primary">
+                <!-- Active/growing child silhouette with stars -->
+                <circle cx="12" cy="7" r="2.5" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9.5v5.5l-3 4M12 15l3 4" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 11.5c3-1.5 7-1.5 10 0" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 4l1 1-1 1M4 4l1 1-1 1" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-neutral-dark text-sm">Tumbuh Kembang Anak</h3>
+              <p class="text-xs text-neutral-secondary mt-1 leading-relaxed">Stimulasi motorik kasar dan halus untuk mendukung perkembangan optimal si kecil.</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 flex gap-4 items-start shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-10 h-10 rounded-xl bg-brand-light/40 flex items-center justify-center shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-5 w-5 text-brand-primary">
+                <!-- Spine column with pinched nerve flare -->
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 5h4M9 9h6M8 13h8M9 17h6M10 21h4" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 2v20" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13c1.5-1 2.5 1 3.5 0M15.5 13c1-1 2 1 3.5 0" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-neutral-dark text-sm">Saraf Kejepit (HNP)</h3>
+              <p class="text-xs text-neutral-secondary mt-1 leading-relaxed">Penanganan herniated nucleus pulposus dengan pendekatan manual dan modalitas terapi.</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 flex gap-4 items-start shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-10 h-10 rounded-xl bg-brand-light/40 flex items-center justify-center shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-5 w-5 text-brand-primary">
+                <!-- Face showing facial nerve/Bell's palsy stimulation/recovery -->
+                <circle cx="12" cy="12" r="9" />
+                <circle cx="9" cy="10" r="1" fill="currentColor" />
+                <circle cx="15" cy="10" r="1" fill="currentColor" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 15c1 1 2.5 1.5 3 1.5s2-.5 3-1.5" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h2.5M17 12h2.5" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-neutral-dark text-sm">Bell's Palsy</h3>
+              <p class="text-xs text-neutral-secondary mt-1 leading-relaxed">Pemulihan kelumpuhan wajah sebagian dengan stimulasi saraf dan latihan ekspresi wajah.</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 flex gap-4 items-start shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-10 h-10 rounded-xl bg-brand-light/40 flex items-center justify-center shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-5 w-5 text-brand-primary">
+                <!-- Restoring body mobility/functionality loop -->
+                <circle cx="12" cy="6" r="2" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v5l-3 4M12 13l3 4" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h8" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M20 12A8 8 0 018 19.5" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 12A8 8 0 0116 4.5" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-neutral-dark text-sm">Gangguan Fungsi Tubuh</h3>
+              <p class="text-xs text-neutral-secondary mt-1 leading-relaxed">Pemulihan kapasitas fungsional tubuh akibat penyakit kronis, cedera, atau pasca operasi.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="text-xs text-neutral-secondary italic border-l-2 border-brand-primary pl-3 mt-8 max-w-2xl reveal-element">
+          Terapi juga dapat dilakukan tanpa adanya keluhan tertentu untuk meningkatkan performa tubuh supaya kembali bisa beraktifitas dengan baik tanpa hambatan dalam bergerak.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- Galeri Sesi Terapi Section -->
+    <section class="py-20 bg-white">
+      <!-- Embedded Responsive SVG Clip Paths for Chamfered Shapes -->
+      <svg class="w-0 h-0 absolute" aria-hidden="true">
+        <defs>
+          <clipPath id="shape-chamfer-br" clipPathUnits="objectBoundingBox">
+            <path d="M 0,0.08 A 0.08,0.08 0 0 1 0.08,0 L 0.92,0 A 0.08,0.08 0 0 1 1,0.08 L 1,0.85 L 0.85,1 L 0.08,1 A 0.08,0.08 0 0 1 0,0.92 Z"></path>
+          </clipPath>
+          <clipPath id="shape-chamfer-tr-bl" clipPathUnits="objectBoundingBox">
+            <path d="M 0,0.08 A 0.08,0.08 0 0 1 0.08,0 L 0.85,0 L 1,0.15 L 1,0.92 A 0.08,0.08 0 0 1 0.92,1 L 0.15,1 L 0,0.85 Z"></path>
+          </clipPath>
+          <clipPath id="shape-chamfer-tl-br" clipPathUnits="objectBoundingBox">
+            <path d="M 0,0.15 L 0.15,0 L 0.92,0 A 0.08,0.08 0 0 1 1,0.08 L 1,0.85 L 0.85,1 L 0.08,1 A 0.08,0.08 0 0 1 0,0.92 Z"></path>
+          </clipPath>
+          <clipPath id="shape-chamfer-bl" clipPathUnits="objectBoundingBox">
+            <path d="M 0,0.08 A 0.08,0.08 0 0 1 0.08,0 L 0.92,0 A 0.08,0.08 0 0 1 1,0.08 L 1,0.92 A 0.08,0.08 0 0 1 0.92,1 L 0.15,1 L 0,0.85 Z"></path>
+          </clipPath>
+        </defs>
+      </svg>
+
+      <div class="max-w-7xl mx-auto px-6 lg:px-[120px]">
+        
+        <!-- Split Header matching reference layout -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-end mb-16 reveal-element">
+          <!-- Left: Title & Badge -->
+          <div class="flex flex-col gap-3">
+            <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-primary">
+              <span class="w-2.5 h-4 bg-brand-primary rounded-sm"></span>
+              <span>Suasana Klinik</span>
+            </div>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-medium leading-[1.15] text-neutral-dark">
+              Sesi Terapi Nyata di Klinik Benecia
+            </h2>
+          </div>
+          <!-- Right: Description -->
+          <div class="flex md:justify-end">
+            <p class="text-neutral-secondary text-base md:text-lg leading-relaxed max-w-md md:text-left">
+              Lingkungan terapi kami dirancang secara profesional agar pasien merasa aman, nyaman, dan bersemangat menjalani setiap sesi pemulihan fisik.
+            </p>
+          </div>
+        </div>
+
+        <!-- Cards Grid with custom chamfered image styles -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 reveal-element">
+          
+          <!-- Card 1: Fisioterapi Dewasa -->
+          <div class="group flex flex-col gap-5 text-left">
+            <div class="w-full aspect-[4/3] overflow-hidden bg-neutral-light relative" style="clip-path: url(#shape-chamfer-br);">
+              <img src="/images/fisioterapi/asset1.avif" alt="Ruang Fisioterapi Dewasa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            </div>
+            <div class="flex flex-col flex-1 justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-neutral-dark group-hover:text-brand-primary transition-colors">
+                  Ruang Terapi Dewasa
+                </h3>
+                <p class="text-sm text-neutral-secondary mt-2.5 leading-relaxed">
+                  Desain ruangan privat, tenang, dan higienis untuk menjaga fokus dan privasi penuh pasien selama pemulihan.
+                </p>
+              </div>
+              <a href="https://wa.me/6285943750988?text=Halo%20Klinik%20Utama%20Benecia,%20saya%20tertarik%20ingin%20tahu%20tentang%20Ruang%20Terapi%20Dewasa." target="_blank" class="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-primary mt-4 group/btn hover:opacity-90">
+                <span>Pelajari Selengkapnya</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5 transition-transform duration-200 group-hover/btn:translate-x-1">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Fisioterapi Anak -->
+          <div class="group flex flex-col gap-5 text-left">
+            <div class="w-full aspect-[4/3] overflow-hidden bg-neutral-light relative" style="clip-path: url(#shape-chamfer-tr-bl);">
+              <img src="/images/fisioterapi/asset2.avif" alt="Ruang Fisioterapi Anak" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            </div>
+            <div class="flex flex-col flex-1 justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-neutral-dark group-hover:text-brand-primary transition-colors">
+                  Terapi Tumbuh Kembang
+                </h3>
+                <p class="text-sm text-neutral-secondary mt-2.5 leading-relaxed">
+                  Ruangan bermain terapeutik yang luas, aman, dan ceria yang disukai oleh anak-anak selama sesi latihan.
+                </p>
+              </div>
+              <a href="https://wa.me/6285943750988?text=Halo%20Klinik%20Utama%20Benecia,%20saya%20tertarik%20ingin%20tahu%20tentang%20Layanan%20Terapi%20Tumbuh%20Kembang%20Anak." target="_blank" class="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-primary mt-4 group/btn hover:opacity-90">
+                <span>Pelajari Selengkapnya</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5 transition-transform duration-200 group-hover/btn:translate-x-1">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Sesi Terapi Personal -->
+          <div class="group flex flex-col gap-5 text-left">
+            <div class="w-full aspect-[4/3] overflow-hidden bg-neutral-light relative" style="clip-path: url(#shape-chamfer-tl-br);">
+              <img src="/images/fisioterapi/asset3.avif" alt="Sesi Terapi Personal" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            </div>
+            <div class="flex flex-col flex-1 justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-neutral-dark group-hover:text-brand-primary transition-colors">
+                  Sesi Terapi Personal
+                </h3>
+                <p class="text-sm text-neutral-secondary mt-2.5 leading-relaxed">
+                  Setiap sesi diarahkan secara langsung dan penuh oleh satu terapis berlisensi demi kenyamanan pemulihan Anda.
+                </p>
+              </div>
+              <a href="https://wa.me/6285943750988?text=Halo%20Klinik%20Utama%20Benecia,%20saya%20tertarik%20ingin%20konsultasi%20sesi%20terapi%20personal." target="_blank" class="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-primary mt-4 group/btn hover:opacity-90">
+                <span>Pelajari Selengkapnya</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5 transition-transform duration-200 group-hover/btn:translate-x-1">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4: Alat Terapi Modern -->
+          <div class="group flex flex-col gap-5 text-left">
+            <div class="w-full aspect-[4/3] overflow-hidden bg-neutral-light relative" style="clip-path: url(#shape-chamfer-bl);">
+              <img src="/images/fisioterapi/asset4.avif" alt="Alat Terapi Modern" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            </div>
+            <div class="flex flex-col flex-1 justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-neutral-dark group-hover:text-brand-primary transition-colors">
+                  Alat Terapi Modern
+                </h3>
+                <p class="text-sm text-neutral-secondary mt-2.5 leading-relaxed">
+                  Fasilitas rehabilitasi dilengkapi dengan peralatan latihan terapeutik modern berkualitas internasional.
+                </p>
+              </div>
+              <a href="https://wa.me/6285943750988?text=Halo%20Klinik%20Utama%20Benecia,%20saya%20ingin%20tahu%20peralatan%20dan%20fasilitas%20terapi." target="_blank" class="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-primary mt-4 group/btn hover:opacity-90">
+                <span>Pelajari Selengkapnya</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5 transition-transform duration-200 group-hover/btn:translate-x-1">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet the Therapist Section -->
+    <section id="therapist" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-[120px]">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto flex flex-col gap-4 mb-16 reveal-element">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-neutral-dark font-medium">Kenali Terapis Kami</h2>
+          <p class="text-neutral-secondary text-base">
+            Tim terapis berlisensi kami siap mendampingi perjalanan pemulihan fisik Anda secara bertahap dan profesional.
+          </p>
+        </div>
+
+        <!-- Therapist profile grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-3xl mx-auto">
+          
+          <!-- Therapist 1 -->
+          <a href="https://wa.me/6285943750988?text=Halo%20Klinik%20Utama%20Benecia,%20saya%20tertarik%20untuk%20menjadwalkan%20sesi%20dengan%20Miss%20Ika." target="_blank" class="group flex flex-col gap-4 max-w-[340px] w-full mx-auto reveal-element">
+            <!-- Image Container -->
+            <div class="w-full aspect-[4/5] rounded-[32px] overflow-hidden bg-[#FAF7F2] relative">
+              <img src="/images/fisioterapi/foto_terapis_1.png" alt="Miss Ika" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" />
+            </div>
+            <!-- Info Container -->
+            <div class="flex items-center justify-between px-2">
+              <div class="flex flex-col text-left">
+                <h3 class="text-xl font-bold text-neutral-dark group-hover:text-brand-primary transition-colors">Miss Ika</h3>
+                <p class="text-sm text-brand-primary font-medium mt-0.5">Fisioterapis Berlisensi</p>
+                <p class="text-xs text-neutral-secondary mt-0.5">STR: MG00001607152238</p>
+              </div>
+              <!-- Arrow Icon Button -->
+              <div class="w-10 h-10 rounded-full bg-[#FAF7F2] text-brand-primary flex items-center justify-center transition-all duration-300 group-hover:bg-brand-primary group-hover:text-white shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- Therapist 2 -->
+          <a href="https://wa.me/6285943750988?text=Halo%20Klinik%20Utama%20Benecia,%20saya%20tertarik%20untuk%20menjadwalkan%20sesi%20dengan%20Miss%20Syahma." target="_blank" class="group flex flex-col gap-4 max-w-[340px] w-full mx-auto reveal-element">
+            <!-- Image Container -->
+            <div class="w-full aspect-[4/5] rounded-[32px] overflow-hidden bg-[#FAF7F2] relative">
+              <img src="/images/fisioterapi/foto_terapis_2.png" alt="Miss Syahma" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" />
+            </div>
+            <!-- Info Container -->
+            <div class="flex items-center justify-between px-2">
+              <div class="flex flex-col text-left">
+                <h3 class="text-xl font-bold text-neutral-dark group-hover:text-brand-primary transition-colors">Miss Syahma</h3>
+                <p class="text-sm text-brand-primary font-medium mt-0.5">Fisioterapis Berlisensi</p>
+                <p class="text-xs text-neutral-secondary mt-0.5">STR: 1403721234671414</p>
+              </div>
+              <!-- Arrow Icon Button -->
+              <div class="w-10 h-10 rounded-full bg-[#FAF7F2] text-brand-primary flex items-center justify-center transition-all duration-300 group-hover:bg-brand-primary group-hover:text-white shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Baby Spa & Massage Section (Figma Section 2 Layout: Content on the Right, Image on the Left) -->
+    <section id="babyspa" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-6 lg:px-[120px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        
+        <!-- Left: Image showing baby therapy/massage context -->
+        <div class="relative flex justify-center order-2 lg:order-1 reveal-element">
+          <!-- Wavy mask visual representation via figma style -->
+          <div class="w-full max-w-[500px] aspect-square rounded-3xl overflow-hidden shadow-sm">
+            <img src="/images/pediatric.png" alt="Sesi Baby Spa & Massage" class="w-full h-full object-cover" />
+          </div>
+        </div>
+
+        <!-- Right: Text content -->
+        <div class="flex flex-col gap-6 text-left order-1 lg:order-2 reveal-element">
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-primary bg-brand-light/50 px-3 py-1.5 rounded-full w-fit">
+            Layanan Tambahan Terkait
+          </span>
+          <h2 class="text-3xl md:text-4xl font-medium leading-[1.15] text-neutral-dark">
+            Baby Spa & Massage untuk Tumbuh Kembang Buah Hati
+          </h2>
+          <p class="text-neutral-secondary text-base leading-relaxed">
+            Selain fisioterapi, kami juga menyediakan layanan Baby Spa & Massage khusus untuk bayi berusia 3 hingga 24 bulan. Berguna untuk melatih kekuatan otot motorik, merangsang relaksasi, memperlancar pencernaan, serta meningkatkan kualitas tidur si kecil secara optimal.
+          </p>
+          <div class="pt-4">
+            <a href="https://wa.me/6285943750988?text=Halo%20Klinik%20Utama%20Benecia,%20saya%20tertarik%20dengan%20layanan%20Baby%20Spa." target="_blank" class="btn-outline group">
+              <span>Reservasi Baby Spa</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 transition-transform duration-200 group-hover:translate-x-1 text-brand-primary">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 8 16 12 12 16"></polyline>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-neutral-footer text-white relative overflow-hidden">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(139,71,40,0.15),transparent_60%)]"></div>
+      
+      <div class="max-w-5xl mx-auto px-6 text-center flex flex-col items-center gap-6 relative z-10 reveal-element">
+        <h2 class="text-3xl md:text-5xl font-bold tracking-tight">Pulihkan Gerak Fungsional dan Kualitas Hidup Anda</h2>
+        <p class="text-brand-light/80 text-base md:text-lg max-w-2xl">
+          Hubungi tim administrasi kami untuk menjadwalkan pemeriksaan awal fisioterapi dewasa atau anak bersama dokter spesialis kami.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 pt-4 w-full sm:w-auto">
+          <a href="https://wa.me/6285943750988?text=Halo%20Klinik%20Utama%20Benecia,%20saya%20ingin%20reservasi%20layanan%20Fisioterapi." target="_blank" class="btn-primary py-4 px-8 text-base">
+            <span>Reservasi via WhatsApp</span>
+          </a>
+          <a href="index.html" class="btn-outline px-8 py-4 text-base border-white/30 text-white hover:bg-white/10 hover:text-white hover:border-white">
+            Kembali ke Beranda
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-footer border-t border-white/10 text-white/60 py-16 relative">
+      <div class="max-w-7xl mx-auto px-6 lg:px-[120px] grid grid-cols-1 md:grid-cols-12 gap-12">
+        
+        <!-- Left: Logo & Info -->
+        <div class="md:col-span-5 flex flex-col gap-6">
+          <a href="index.html" class="flex items-center gap-3">
+            <img src="/images/logo_benecia.avif" alt="Logo Klinik Utama Benecia" class="h-10 w-auto object-contain brightness-0 invert" />
+          </a>
+          <p class="text-sm leading-relaxed text-white/60 text-left">
+            Klinik Utama Benecia menyediakan layanan rehabilitasi medik komprehensif, fisioterapi dewasa, terapi wicara, terapi okupasi, dan psikologi anak di Semarang.
+          </p>
+          <div class="flex gap-4">
+            <a href="https://www.instagram.com/klinikbenecia/" target="_blank" class="hover:text-white transition-colors" aria-label="Instagram">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/klinikbenecia" target="_blank" class="hover:text-white transition-colors" aria-label="Facebook">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8H7v3h2v9h4v-9h3.61L17 8h-3V6.27A1 1 0 0115 5h2V2h-3a4.14 4.14 0 00-4.14 4.14V8z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Middle: Operational Hour & Address -->
+        <div class="md:col-span-4 flex flex-col gap-4 text-left">
+          <h4 class="text-white font-semibold text-sm uppercase tracking-wider">Jam Operasional & Lokasi</h4>
+          <div class="flex flex-col gap-2 text-sm text-white/60">
+            <p><span class="text-white font-medium">Senin - Sabtu:</span> 08:00 - 20:00 WIB</p>
+            <p><span class="text-white font-medium">Minggu & Tgl Merah:</span> Libur (Kecuali Janji Temu Terjadwal)</p>
+          </div>
+          <p class="text-sm text-white/60 leading-relaxed mt-2 text-left">
+            Jl. Semarang Indah Blok C IV No 22, Tawangmas, Kota Semarang, Jawa Tengah 50144
+          </p>
+        </div>
+
+        <!-- Right: Fast links -->
+        <div class="md:col-span-3 flex flex-col gap-4 text-left">
+          <h4 class="text-white font-semibold text-sm uppercase tracking-wider">Tautan Cepat</h4>
+          <div class="flex flex-col gap-3 text-sm">
+            <a href="https://goo.gl/maps/cWw5F8pD2zWd549L9" target="_blank" class="flex items-center gap-2.5 hover:text-white transition-colors">
+              <svg class="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span>Lihat Peta Google Maps</span>
+            </a>
+            <a href="mailto:klinikbenecia1@gmail.com" class="flex items-center gap-2.5 hover:text-white transition-colors">
+              <svg class="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <span>klinikbenecia1@gmail.com</span>
+            </a>
+            <a href="https://wa.me/6285943750988" class="flex items-center gap-2.5 hover:text-white transition-colors">
+              <svg class="h-4 w-4 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.248 8.477 3.517 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.719-1.465L0 24zm6.59-2.046c1.652.981 3.27 1.499 5.343 1.5 5.568 0 10.102-4.524 10.104-10.088.001-2.695-1.045-5.228-2.946-7.13C17.247 4.333 14.73 3.288 12.012 3.288c-5.576 0-10.108 4.528-10.112 10.093-.002 2.01.524 3.972 1.523 5.705l-.989 3.61 3.71-.973zm12.39-7.37c-.328-.163-1.94-.957-2.24-1.066-.3-.11-.518-.163-.738.163-.22.329-.85.738-1.04.956-.19.219-.38.246-.708.082-.328-.163-1.386-.51-2.637-1.628-.973-.868-1.629-1.94-1.82-2.267-.19-.328-.02-.505.144-.668.149-.147.329-.382.493-.574.163-.19.219-.328.329-.548.11-.219.055-.41-.027-.574-.083-.163-.738-1.78-.93-2.267-.206-.496-.413-.412-.566-.42l-.48-.009c-.163 0-.43.06-.653.3-.223.24-.85.83-.85 2.028s.874 2.35 1.01 2.53c.137.18 1.719 2.63 4.16 3.684.58.25 1.034.4 1.39.513.582.185 1.112.159 1.53.097.467-.069 1.94-.793 2.214-1.52.274-.727.274-1.35.19-1.48-.083-.127-.3-.22-.627-.383z" />
+              </svg>
+              <span>Whatsapp: 0859-4375-0988</span>
+            </a>
+            <a href="https://drive.google.com/file/d/1rNcutm8e9Ff9faOezKV68QfnHTF7a-rM/view?usp=sharing" target="_blank" class="flex items-center gap-2.5 hover:text-white transition-colors">
+              <svg class="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              <span>Unduh Katalog Layanan</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="max-w-7xl mx-auto px-6 lg:px-[120px] border-t border-white/10 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+        <p>© 2026 oleh Klinik Utama Benecia. Seluruh hak cipta dilindungi.</p>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-white transition-colors">Syarat & Ketentuan</a>
+          <a href="#" class="hover:text-white transition-colors">Kebijakan Privasi</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
