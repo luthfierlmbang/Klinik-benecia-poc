@@ -440,119 +440,90 @@
       <div class="max-w-7xl mx-auto px-6 lg:px-[120px]">
         
         <!-- Header -->
-        <div class="text-center max-w-3xl mx-auto flex flex-col gap-4 mb-16 reveal-element">
-          <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-neutral-dark">Layanan Klinik Lainnya</h2>
-          <p class="text-neutral-secondary text-base md:text-lg">
-            Program rehabilitasi terpadu bersama dokter spesialis & terapis berpengalaman.
+        <div class="text-center max-w-2xl mx-auto flex flex-col gap-4 mb-16 reveal-element">
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-primary bg-brand-light/50 px-3 py-1.5 rounded-full w-fit mx-auto">
+            Layanan Lainnya
+          </span>
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-neutral-dark">
+            Eksplorasi Layanan Klinik Lainnya
+          </h2>
+          <p class="text-neutral-secondary text-base">
+            Kami menyediakan berbagai program tumbuh kembang anak terpadu secara profesional bersama terapis berpengalaman.
           </p>
         </div>
 
-        <!-- Alternating Bento Cards Grid (Flat layout without shadows, optimized for no overlaps) -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal-element">
+        <!-- 3-Column Normal Card Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto reveal-element">
           
-          <!-- Column 1: Fisioterapi (Image Top, Text Bottom - Solid Teal) -->
-          <div class="flex flex-col gap-6">
-            <!-- Image Card -->
-            <div class="h-[350px] w-full rounded-[32px] overflow-hidden group">
-              <img src="/images/fisioterapi/fisioterapi_bento.png" alt="Layanan Fisioterapi Dewasa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-            </div>
-            <!-- Text Card (Solid Teal) -->
-            <a href="fisioterapi.html" class="min-h-[220px] h-fit w-full bg-brand-primary text-white rounded-[32px] px-8 py-7 flex flex-col justify-between text-left hover:opacity-95 transition-all group">
-              <div>
-                <h3 class="text-xl font-bold">01. Fisioterapi</h3>
-                <p class="text-sm text-white/90 mt-2.5 leading-relaxed">
-                  Rehabilitasi pasca-stroke, cedera olahraga, dan saraf terjepit.
-                </p>
-              </div>
-              <div class="inline-flex items-center gap-2 text-xs font-semibold text-white mt-4">
-                <span>Detail Layanan</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 8 16 12 12 16"></polyline>
-                  <line x1="8" y1="12" x2="16" y2="12"></line>
-                </svg>
-              </div>
-            </a>
-          </div>
-
-          <!-- Column 2: Terapi Wicara (Text Top - Cream, Image Bottom) -->
-          <div class="flex flex-col gap-6">
-            <!-- Text Card (Cream) -->
-            <a href="https://wa.me/6285943750988?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Terapi%20Wicara." target="_blank" class="min-h-[220px] h-fit w-full bg-[#FAF7F2] text-neutral-dark rounded-[32px] px-8 py-7 flex flex-col justify-between text-left hover:bg-[#FAF4EB] transition-all group">
-              <div>
-                <h3 class="text-xl font-bold text-neutral-dark">02. Terapi Wicara</h3>
-                <p class="text-sm text-neutral-secondary mt-2.5 leading-relaxed">
-                  Terapi speech delay (lambat bicara), gangguan bahasa, dan artikulasi anak.
-                </p>
-              </div>
-              <div class="inline-flex items-center gap-2 text-xs font-semibold text-brand-primary mt-4">
-                <span>Detail Layanan</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 8 16 12 12 16"></polyline>
-                  <line x1="8" y1="12" x2="16" y2="12"></line>
-                </svg>
-              </div>
-            </a>
-            <!-- Image Card -->
-            <div class="h-[350px] w-full rounded-[32px] overflow-hidden group">
+          <!-- Card 1: Terapi Wicara -->
+          <div class="group bg-[#FAF7F2] rounded-[32px] overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+            <div class="w-full aspect-[4/3] overflow-hidden">
               <img src="/images/fisioterapi/terapi_wicara_bento.png" alt="Layanan Terapi Wicara" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
             </div>
+            <div class="p-8 flex flex-col flex-grow justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-neutral-dark group-hover:text-brand-primary transition-colors">Terapi Wicara</h3>
+                <p class="text-sm text-neutral-secondary mt-3 leading-relaxed">
+                  Membantu anak yang mengalami keterlambatan bicara (speech delay), gangguan bahasa, artikulasi, dan kesulitan komunikasi.
+                </p>
+              </div>
+              <a href="https://wa.me/6285943750988?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Terapi%20Wicara." target="_blank" class="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-primary mt-6 group/btn hover:opacity-90">
+                <span>Pelajari Selengkapnya</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 transition-transform duration-200 group-hover/btn:translate-x-1">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
           </div>
 
-          <!-- Column 3: Terapi Okupasi (Image Top, Text Bottom - Cream) -->
-          <div class="flex flex-col gap-6">
-            <!-- Image Card -->
-            <div class="h-[350px] w-full rounded-[32px] overflow-hidden group">
+          <!-- Card 2: Terapi Okupasi -->
+          <div class="group bg-[#FAF7F2] rounded-[32px] overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+            <div class="w-full aspect-[4/3] overflow-hidden">
               <img src="/images/fisioterapi/terapi_okupasi_bento.png" alt="Layanan Terapi Okupasi" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
             </div>
-            <!-- Text Card (Cream) -->
-            <a href="https://wa.me/6285943750988?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Terapi%20Okupasi." target="_blank" class="min-h-[220px] h-fit w-full bg-[#FAF7F2] text-neutral-dark rounded-[32px] px-8 py-7 flex flex-col justify-between text-left hover:bg-[#FAF4EB] transition-all group">
+            <div class="p-8 flex flex-col flex-grow justify-between">
               <div>
-                <h3 class="text-xl font-bold text-neutral-dark">03. Terapi Okupasi</h3>
-                <p class="text-sm text-neutral-secondary mt-2.5 leading-relaxed">
-                  Melatih fokus, sensorik integrasi, dan kemandirian motorik anak.
+                <h3 class="text-xl font-bold text-neutral-dark group-hover:text-brand-primary transition-colors">Terapi Okupasi</h3>
+                <p class="text-sm text-neutral-secondary mt-3 leading-relaxed">
+                  Melatih kemandirian anak dalam aktivitas harian, integrasi sensorik, fokus konsentrasi, koordinasi tubuh, dan motorik halus.
                 </p>
               </div>
-              <div class="inline-flex items-center gap-2 text-xs font-semibold text-brand-primary mt-4">
-                <span>Detail Layanan</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 8 16 12 12 16"></polyline>
-                  <line x1="8" y1="12" x2="16" y2="12"></line>
+              <a href="https://wa.me/6285943750988?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Terapi%20Okupasi." target="_blank" class="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-primary mt-6 group/btn hover:opacity-90">
+                <span>Pelajari Selengkapnya</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 transition-transform duration-200 group-hover/btn:translate-x-1">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
 
-          <!-- Column 4: Psikologi Anak (Text Top - Dark Green, Image Bottom) -->
-          <div class="flex flex-col gap-6">
-            <!-- Text Card (Dark Green) -->
-            <a href="https://wa.me/6285943750988?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Psikologi%20Anak." target="_blank" class="min-h-[220px] h-fit w-full bg-brand-forest text-white rounded-[32px] px-8 py-7 flex flex-col justify-between text-left hover:opacity-95 transition-all group">
+          <!-- Card 3: Psikologi Anak -->
+          <div class="group bg-[#FAF7F2] rounded-[32px] overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+            <div class="w-full aspect-[4/3] overflow-hidden">
+              <img src="/images/fisioterapi/psikologi_anak_bento.png" alt="Layanan Psikologi Anak" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            </div>
+            <div class="p-8 flex flex-col flex-grow justify-between">
               <div>
-                <h3 class="text-xl font-bold">04. Psikologi Anak</h3>
-                <p class="text-sm text-white/90 mt-2.5 leading-relaxed">
-                  Asesmen tumbuh kembang, kognitif, perilaku, dan bimbingan emosi anak.
+                <h3 class="text-xl font-bold text-neutral-dark group-hover:text-brand-primary transition-colors">Psikologi Anak</h3>
+                <p class="text-sm text-neutral-secondary mt-3 leading-relaxed">
+                  Evaluasi kognitif, emosi, perilaku, tumbuh kembang anak, serta bimbingan konsultasi keluarga bersama psikolog klinis.
                 </p>
               </div>
-              <div class="inline-flex items-center gap-2 text-xs font-semibold text-white mt-4">
-                <span>Detail Layanan</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 8 16 12 12 16"></polyline>
-                  <line x1="8" y1="12" x2="16" y2="12"></line>
+              <a href="https://wa.me/6285943750988?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Psikologi%20Anak." target="_blank" class="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-primary mt-6 group/btn hover:opacity-90">
+                <span>Pelajari Selengkapnya</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 transition-transform duration-200 group-hover/btn:translate-x-1">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
-              </div>
-            </a>
-            <!-- Image Card -->
-            <div class="h-[350px] w-full rounded-[32px] overflow-hidden group">
-              <img src="/images/fisioterapi/psikologi_anak_bento.png" alt="Layanan Psikologi Anak" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              </a>
             </div>
           </div>
 
         </div>
       </div>
-    </section>ion>
+    </section>
 
     <!-- CTA Section -->
     <section class="py-20 bg-neutral-footer text-white relative overflow-hidden">
